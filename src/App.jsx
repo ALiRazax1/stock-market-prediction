@@ -3,70 +3,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { TrendingUp, BarChart3, Brain, Users, Shield, Zap, ArrowRight, Star } from "lucide-react"
 import { Link } from "react-router"
-
+import Header from "./components/ui/header"
 export  function App() {
   return (
     <div className="flex flex-col min-h-screen" style={{ backgroundColor: "#00202E" }}>
       {/* Header */}
-      <header
-        className="px-4 lg:px-6 h-16 flex items-center border-b sticky top-0 z-50"
-        style={{
-          backgroundColor: "#00202E",
-          borderColor: "rgba(191, 237, 252, 0.2)",
-          backdropFilter: "blur(10px)",
-        }}
-      >
-        <Link to="/" className="flex items-center justify-center">
-          <TrendingUp className="h-8 w-8" style={{ color: "#00FF88" }} />
-          <span className="ml-2 text-xl font-bold" style={{ color: "#BFEDFC" }}>
-            StockPro
-          </span>
-        </Link>
-        <nav className="ml-auto hidden md:flex gap-6">
-          <Link
-            to="#home"
-            className="text-sm font-medium hover:opacity-80 transition-opacity"
-            style={{ color: "#BFEDFC" }}
-          >
-            Home
-          </Link>
-          <Link
-            to="#insights"
-            className="text-sm font-medium hover:opacity-80 transition-opacity"
-            style={{ color: "#BFEDFC" }}
-          >
-            Insights
-          </Link>
-          <Link
-            to="#prediction"
-            className="text-sm font-medium hover:opacity-80 transition-opacity"
-            style={{ color: "#BFEDFC" }}
-          >
-            Prediction
-          </Link>
-          <Link
-            to="#about"
-            className="text-sm font-medium hover:opacity-80 transition-opacity"
-            style={{ color: "#BFEDFC" }}
-          >
-            About Us
-          </Link>
-        </nav>
-        <div className="ml-6 flex gap-2">
-          <Link to ='/login'><Button
-            variant="ghost"
-            size="sm"
-            className="hover:bg-opacity-10"
-            style={{ color: "#BFEDFC", backgroundColor: "transparent" }}
-          >
-            Login
-          </Button></Link>
-          <Link to={'/signup'}>
-          <Button size="sm" className="hover:opacity-90" style={{ backgroundColor: "#BFEDFC", color: "#00202E" }}>
-            Sign Up
-          </Button></Link>
-        </div>
-      </header>
+   
+      <Header/>
 
       <main className="flex-1">
         {/* Hero Section */}
