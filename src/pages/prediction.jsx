@@ -150,7 +150,7 @@ export default function PredictionPage() {
         {/* Page Header */}
         <div className="mb-8">
           <Link
-            href="/"
+            to="/"
             className="inline-flex items-center gap-2 mb-4 text-sm hover:opacity-80 transition-opacity"
             style={{ color: "#BFEDFC" }}
           >

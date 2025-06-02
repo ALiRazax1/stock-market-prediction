@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import LoginPage from "./pages/login";
 import SignUpPage from "./pages/signup";
 import  PredictionPage from "./pages/prediction"
+import { NotFound } from "./pages/not-found";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/login" element={<LoginPage/>}></Route>
         <Route path="/signup" element={<SignUpPage/>}></Route>
         <Route path="/prediction" element={<PredictionPage/>}></Route>
+        <Route path="*" element={<NotFound/>}></Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>
