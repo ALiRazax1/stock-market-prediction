@@ -22,7 +22,7 @@ export default function SignUpPage() {
   ]
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-12" style={{ backgroundColor: "#00202E" }}>
+    <div className="min-h-screen flex items-center justify-center " style={{ backgroundColor: "#00202E" }}>
       <div className="w-full max-w-md p-6">
         {/* Back to Home */}
         <Link
@@ -205,12 +205,7 @@ export default function SignUpPage() {
               </div>
 
               {/* Marketing Emails */}
-              <div className="flex items-start space-x-2">
-                <Checkbox id="marketing" className="mt-1" />
-                <Label htmlFor="marketing" className="text-sm" style={{ color: "rgba(191, 237, 252, 0.8)" }}>
-                  Send me market insights and trading tips via email
-                </Label>
-              </div>
+                    
 
               {/* Create Account Button */}
               <Button type="submit" className="w-full bg-lime-400 hover:bg-lime-500" style={{ color: "#00202E" }}>
@@ -218,43 +213,8 @@ export default function SignUpPage() {
               </Button>
             </form>
 
-            {/* Divider */}
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <span className="w-full border-t" style={{ borderColor: "rgba(191, 237, 252, 0.2)" }} />
-              </div>
-              <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-transparent px-2" style={{ color: "rgba(191, 237, 252, 0.7)" }}>
-                  Or continue with
-                </span>
-              </div>
-            </div>
-
-            {/* Social Sign Up */}
-            <div className="grid grid-cols-2 gap-4">
-              <Button
-                variant="outline"
-                className="border-2 hover:bg-opacity-10"
-                style={{
-                  borderColor: "rgba(191, 237, 252, 0.3)",
-                  color: "#BFEDFC",
-                  backgroundColor: "transparent",
-                }}
-              >
-                Google
-              </Button>
-              <Button
-                variant="outline"
-                className="border-2 hover:bg-opacity-10"
-                style={{
-                  borderColor: "rgba(191, 237, 252, 0.3)",
-                  color: "#BFEDFC",
-                  backgroundColor: "transparent",
-                }}
-              >
-                GitHub
-              </Button>
-            </div>
+   
+            
 
             {/* Sign In Link */}
             <div className="text-center">

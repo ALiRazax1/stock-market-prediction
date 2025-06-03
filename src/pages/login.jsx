@@ -122,42 +122,7 @@ export default function LoginPage() {
             </form>
 
             {/* Divider */}
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <span className="w-full border-t" style={{ borderColor: "rgba(191, 237, 252, 0.2)" }} />
-              </div>
-              <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-transparent px-2" style={{ color: "rgba(191, 237, 252, 0.7)" }}>
-                  Or continue with
-                </span>
-              </div>
-            </div>
-
-            {/* Social Login */}
-            <div className="grid grid-cols-2 gap-4">
-              <Button
-                variant="outline"
-                className="border-2 hover:bg-opacity-10"
-                style={{
-                  borderColor: "rgba(191, 237, 252, 0.3)",
-                  color: "#BFEDFC",
-                  backgroundColor: "transparent",
-                }}
-              >
-                Google
-              </Button>
-              <Button
-                variant="outline"
-                className="border-2 hover:bg-opacity-10"
-                style={{
-                  borderColor: "rgba(191, 237, 252, 0.3)",
-                  color: "#BFEDFC",
-                  backgroundColor: "transparent",
-                }}
-              >
-                GitHub
-              </Button>
-            </div>
+          
 
             {/* Sign Up Link */}
             <div className="text-center">
