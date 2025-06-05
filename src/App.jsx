@@ -222,7 +222,7 @@ export  function App() {
                   className="inline-block rounded-lg px-3 py-1 text-sm"
                   style={{ backgroundColor: "rgba(191, 237, 252, 0.2)", color: "#BFEDFC" }}
                 >
-                  About StockPro
+                  About IRMTP
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl" style={{ color: "#BFEDFC" }}>
                   Trusted by Thousands of Investors
@@ -231,7 +231,7 @@ export  function App() {
                   className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                   style={{ color: "rgba(191, 237, 252, 0.8)" }}
                 >
-                  Founded by financial experts and AI researchers, StockPro combines decades of market experience with
+                  Founded by financial experts and AI researchers, IRMTP combines decades of market experience with
                   cutting-edge technology to democratize professional-grade investment tools.
                 </p>
               </div>
@@ -293,7 +293,7 @@ export  function App() {
         style={{ backgroundColor: "#00202E", borderColor: "rgba(191, 237, 252, 0.2)" }}
       >
         <p className="text-xs" style={{ color: "rgba(191, 237, 252, 0.7)" }}>
-          © {new Date().getFullYear()} StockPro. All rights reserved.
+          © {new Date().getFullYear()} IRMTP. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link

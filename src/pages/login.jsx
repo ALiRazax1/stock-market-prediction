@@ -44,7 +44,7 @@ export default function LoginPage() {
               Welcome Back
             </CardTitle>
             <CardDescription style={{ color: "rgba(191, 237, 252, 0.7)" }}>
-              Sign in to your StockPro account to continue your trading journey
+              Sign in to your IRMTP account to continue your trading journey
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
