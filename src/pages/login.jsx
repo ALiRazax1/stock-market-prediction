@@ -18,7 +18,7 @@ export default function LoginPage() {
         {/* Back to Home */}
         <Link
           to="/"
-          className="inline-flex items-center gap-2 mb-8 text-sm hover:opacity-80 transition-opacity"
+          className="inline-flex items-center gap-2  text-sm hover:opacity-80 transition-opacity"
           style={{ color: "#BFEDFC" }}
         >
           <ArrowLeft className="h-4 w-4" />
@@ -26,11 +26,8 @@ export default function LoginPage() {
         </Link>
 
         {/* Logo */}
-        <div className="flex items-center justify-center mb-8">
-          <TrendingUp className="h-10 w-10" style={{ color: "#00FF88" }} />
-          <span className="ml-3 text-2xl font-bold" style={{ color: "#BFEDFC" }}>
-            StockPro
-          </span>
+        <div className="flex items-center justify-center">
+          <img className="w-[30%]" src="/logo/logo-removebg-preview-Edited.png"/>
         </div>
 
         {/* Login Card */}

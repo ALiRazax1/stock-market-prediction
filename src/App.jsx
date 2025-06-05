@@ -30,27 +30,20 @@ export  function App() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" className="bg-lime-400 hover:bg-lime-500" style={{ color: "#BFEDFC" }}>
-                    Start Free Trial
+                  <Button size="lg" className="bg-lime-400 hover:bg-lime-500" style={{ color: "#00202E" }}>
+                   Get Started
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="hover:bg-opacity-10"
-                    style={{ borderColor: "#BFEDFC", color: "#BFEDFC", backgroundColor: "transparent" }}
-                  >
-                    Watch Demo
-                  </Button>
+                 
                 </div>
-                <div className="flex items-center gap-4 text-sm" style={{ color: "rgba(191, 237, 252, 0.7)" }}>
+                {/* <div className="flex items-center gap-4 text-sm" style={{ color: "rgba(191, 237, 252, 0.7)" }}>
                   <div className="flex items-center gap-1">
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <span>4.9/5 rating</span>
                   </div>
                   <span>•</span>
                   <span>10,000+ active traders</span>
-                </div>
+                </div> */}
               </div>
               <img
                 src="/home/markus-spiske-XrIfY_4cK1w-unsplash.jpg"
@@ -74,7 +67,7 @@ export  function App() {
               <div className="space-y-2">
                 <div
                   className="inline-block rounded-lg px-3 py-1 text-sm"
-                  style={{ backgroundColor: "rgba(0, 255, 136, 0.2)", color: "#00FF88" }}
+                  style={{ backgroundColor: "rgba(0, 32, 46, 0.8)", color: "#99C4D3" }}
                 >
                   Market Insights
                 </div>
@@ -101,7 +94,7 @@ export  function App() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-6">
                   <div className="flex items-start gap-4">
-                    <BarChart3 className="h-6 w-6 mt-1" style={{ color: "#00FF88" }} />
+                    <BarChart3 className="h-6 w-6 mt-1" style={{ color: "#00202E" }} />
                     <div>
                       <h3 className="text-xl font-bold" style={{ color: "#00202E" }}>
                         Technical Analysis
@@ -112,7 +105,7 @@ export  function App() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <Brain className="h-6 w-6 mt-1" style={{ color: "#00FF88" }} />
+                    <Brain className="h-6 w-6 mt-1" style={{ color: "#00202E" }} />
                     <div>
                       <h3 className="text-xl font-bold" style={{ color: "#00202E" }}>
                         Sentiment Analysis
@@ -122,17 +115,7 @@ export  function App() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <Zap className="h-6 w-6 mt-1" style={{ color: "#00FF88" }} />
-                    <div>
-                      <h3 className="text-xl font-bold" style={{ color: "#00202E" }}>
-                        Real-Time Alerts
-                      </h3>
-                      <p style={{ color: "rgba(0, 32, 46, 0.8)" }}>
-                        Instant notifications for price movements, volume spikes, and trading opportunities.
-                      </p>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -300,72 +283,8 @@ export  function App() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section
-          className="w-full py-12 md:py-24 lg:py-32"
-          style={{ background: "linear-gradient(135deg, #BFEDFC 0%, #BFEDFC 100%)" }}
-        >
-          <div className="container px-4 md:px-6">
-            <div
-              className="flex flex-col items-center justify-center space-y-4 text-center"
-              style={{ color: "#00202E" }}
-            >
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Ready to Transform Your Trading?
-                </h2>
-                <p
-                  className="mx-auto max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-                  style={{ color: "rgba(0, 32, 46, 0.8)" }}
-                >
-                  Join thousands of successful traders who trust StockPro for their investment decisions. Start your
-                  free trial today and experience the power of AI-driven market analysis.
-                </p>
-              </div>
-              <div className="w-full max-w-sm space-y-2">
-                <form className="flex gap-2">
-                  <Input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="max-w-lg flex-1 border-2"
-                    style={{
-                      backgroundColor: "rgba(0, 32, 46, 0.1)",
-                      borderColor: "#00202E",
-                      color: "#00202E",
-                    }}
-                  />
-                  <Button
-                    type="submit"
-                    className="hover:opacity-90"
-                    style={{ backgroundColor: "#00202E", color: "#BFEDFC" }}
-                  >
-                    Get Started
-                  </Button>
-                </form>
-                <p className="text-xs" style={{ color: "rgba(0, 32, 46, 0.7)" }}>
-                  Start your 14-day free trial. No credit card required.{" "}
-                  <Link to="/terms" className="underline underline-offset-2 hover:opacity-80">
-                    Terms & Conditions
-                  </Link>
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button size="lg" className="hover:opacity-90" style={{ backgroundColor: "#00202E", color: "#BFEDFC" }}>
-                  Start Free Trial
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="hover:bg-opacity-10 border-2"
-                  style={{ borderColor: "#00202E", color: "#00202E", backgroundColor: "transparent" }}
-                >
-                  Schedule Demo
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
+      
+        
       </main>
 
       {/* Footer */}

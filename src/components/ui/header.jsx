@@ -14,12 +14,8 @@ export default function Header(){
         }}
       >
         <Link to="/" className="flex items-center justify-center">
-          <TrendingUp className="h-8 w-8" style={{ color: "#00FF88" }} />
-          <span
-           className="ml-2 text-xl font-bold"
-           style= {{color:"#BFEDFC"}}>
-            StockPro
-          </span>
+          <img src="/logo/logo-removebg-preview-Edited.png" alt="IRMTP"  className="w-[50px]"/>
+          
         </Link>
         <nav className="ml-auto hidden md:flex gap-6">
           <NavLink  
@@ -66,7 +62,7 @@ style={({isActive})=>({color: isActive?"#00FF88":"#BFEDFC"})}          >
         </div>
 {/* Mobile button */}
 <button
-          className="ml-auto md:hidden p-2 rounded-md"
+          className="ml-auto md:hidden p-2 rounded-md cursor-pointer"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           style={{ color: "#BFEDFC" }}
         >
@@ -78,7 +74,7 @@ style={({isActive})=>({color: isActive?"#00FF88":"#BFEDFC"})}          >
 
 
 
-      {/* asd0 */}
+      {/* Mobile view links */}
       {mobileMenuOpen && (
         <div
           className="md:hidden fixed inset-0 z-40 pt-16"
@@ -86,7 +82,7 @@ style={({isActive})=>({color: isActive?"#00FF88":"#BFEDFC"})}          >
         >
           <div className="flex flex-col p-4 space-y-4">
             <Link
-              href="#home"
+              to="/"
               className="text-lg font-medium py-2 hover:opacity-80 transition-opacity"
               style={{ color: "#BFEDFC" }}
               onClick={() => setMobileMenuOpen(false)}
@@ -94,7 +90,7 @@ style={({isActive})=>({color: isActive?"#00FF88":"#BFEDFC"})}          >
               Home
             </Link>
             <Link
-              href="#insights"
+              to="/indights"
               className="text-lg font-medium py-2 hover:opacity-80 transition-opacity"
               style={{ color: "#BFEDFC" }}
               onClick={() => setMobileMenuOpen(false)}
@@ -102,7 +98,7 @@ style={({isActive})=>({color: isActive?"#00FF88":"#BFEDFC"})}          >
               Insights
             </Link>
             <Link
-              href="/prediction"
+              to="/prediction"
               className="text-lg font-medium py-2 hover:opacity-80 transition-opacity"
               style={{ color: "#BFEDFC" }}
               onClick={() => setMobileMenuOpen(false)}
@@ -110,7 +106,7 @@ style={({isActive})=>({color: isActive?"#00FF88":"#BFEDFC"})}          >
               Prediction
             </Link>
             <Link
-              href="#about"
+              to="/about"
               className="text-lg font-medium py-2 hover:opacity-80 transition-opacity"
               style={{ color: "#BFEDFC" }}
               onClick={() => setMobileMenuOpen(false)}
