@@ -26,7 +26,7 @@ export default function Header(){
             Home
           </NavLink>
           <NavLink
-            to="/s"
+            to="/insights"
             className="text-sm font-medium hover:opacity-80 transition-opacity"
             style={({isActive})=>({color: isActive?"#00FF88":"#BFEDFC"})}
           >
@@ -40,7 +40,7 @@ export default function Header(){
             Prediction
           </NavLink>
           <NavLink
-            to="/f"
+            to="/about"
             className="text-sm font-medium hover:opacity-80 transition-opacity"
 style={({isActive})=>({color: isActive?"#00FF88":"#BFEDFC"})}          >
             About Us
@@ -90,7 +90,7 @@ style={({isActive})=>({color: isActive?"#00FF88":"#BFEDFC"})}          >
               Home
             </Link>
             <Link
-              to="/indights"
+              to="/insights"
               className="text-lg font-medium py-2 hover:opacity-80 transition-opacity"
               style={{ color: "#BFEDFC" }}
               onClick={() => setMobileMenuOpen(false)}
