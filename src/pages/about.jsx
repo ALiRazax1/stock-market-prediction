@@ -27,12 +27,12 @@ import Header from "@/components/ui/header"
 
 // Team members data
 const teamMembers = [
-  "Ahmed Hassan",
-  "Sarah Johnson",
-  "Michael Chen",
-  "Fatima Al-Zahra",
-  "David Rodriguez",
-  "Aisha Patel",
+  "Syeda Aisha",
+  "Sabahat",
+  "Husnain Ahmed",
+  "Anas Iqbal",
+  "Usama Arshad",
+  "Ali Raza",
 ]
 
 // Project statistics
